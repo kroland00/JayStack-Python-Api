@@ -6,7 +6,6 @@ from celery import Celery
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
-app.config["threaded"] = True
 app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
 
 celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
