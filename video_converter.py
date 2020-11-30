@@ -15,6 +15,10 @@ celery.conf.update(app.config)
 # Create converted videos folder if not exists.
 if not os.path.exists('converted_mp4_videos'):
     os.makedirs('converted_mp4_videos')
+if not os.path.exists('avi_files'):
+    os.makedirs('avi_files')
+if not os.path.exists('gif_files'):
+    os.makedirs('gif_files')
 
 # Delete stopped converting tmp files.
 projectFolder = os.listdir()
