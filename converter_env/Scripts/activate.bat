@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=E:\meló\Jaystack_video_converter\converter_env
+set VIRTUAL_ENV=E:\meló\Github_repos\JayStack-Python-Api\converter_env
 
 if not defined PROMPT set PROMPT=$P$G
 

@@ -3,6 +3,7 @@ import moviepy.editor as moviepy
 import os.path
 from os import path
 from celery import Celery
+from waitress import serve
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
@@ -68,4 +69,4 @@ def convertGifToMp4():
 convertSavedAvi()
 convertSavedGif()
 
-app.run()
+serve(app, host='0.0.0.0', port=8080)

@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="E:\meló\Jaystack_video_converter\converter_env"
+VIRTUAL_ENV="E:\meló\Github_repos\JayStack-Python-Api\converter_env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
